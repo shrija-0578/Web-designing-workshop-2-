@@ -6,46 +6,48 @@
         body {
             margin: 0;
             overflow: hidden;
-            background: skyblue;
+            background-image: url(b2.jpg);
+            background-size: cover;
         }
-
-        
+        .hill-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 120%;
+            overflow: hidden; /* Hide the hill when it's "off-screen" */
+        }
 
         .hill {
+            background-image: url(hill.png);
             position: absolute;
-            bottom: 0;
-            width: 200%;
-            height: 60%;
-            background: #005F02;
-            border-radius: 50% 50% 0 0;
-            
-        }
-         .hill_2 {
-            position: absolute;
-            bottom: 0;
-            width: 200%;
-            height: 40%;
-            background: #427A43;
-            border-radius: 50% 50% 0 0;
-            animation: moveHill 6s linear infinite;
-            
-        }
-         @keyframes moveHill {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background-size: cover;
+            animation: moveHill 25s linear infinite;
         }
 
+        /* Offset the second hill so it starts right behind the first one */
+        .hill2 {
+            left: 100%;
+        }
+
+        @keyframes moveHill {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
 
 
         .car {
             position: absolute;
-            bottom: 40%;
+            bottom: 12%;
             left: 10%;
             width: 60px;
             height: 30px;
             background: red;
             border-radius: 5px;
-            animation: bounce 2s ease-in-out infinite
+            animation: bounce 25s ease-in-out infinite;
+            z-index: 4;
         }
 
 
@@ -65,31 +67,76 @@
             background: black;
             border-radius: 50%;
             right: 5px; }
+
          @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+            /* 0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); } */
+                /* 0% { transform: translateY(0); }
+                15% { transform: translateY(-40px); }
+                35% { transform: translateY(-260px); }
+                40% { transform: translateY(-260px); }
+                55% { transform: translateY(-60px); }
+                65% { transform: translateY(-240px); } 
+                70% { transform: translateY(-50px); }
+                80% { transform: translateY(-40); }
+                /* 100% { transform: translateY(0); }  */
+                10% { transform: translateY(-40px); }
+                20% { transform: translateY(-70px); }
+                30% { transform: translateY(-250px); }
+                    40% { transform: translateY(-290px); }
+                53% { transform: translateY(-100px); }
+                60% { transform: translateY(-70px); }
+                65% { transform: translateY(-30px); }
+                70% { transform: translateY(-20px); }
+                80% { transform: translateY(-5px); }
+                90% { transform: translateY(+5px); }    
+                 100% { transform: translateY(0); }
         }
 
         h2 {
-            position: absolute;
-            top: 50px;
-            left: 100px  ;
-            color: white;
-            font-family: Arial;
-            font-size: 3rem;
-        }
-        button {
-            position: absolute;
+             position: absolute;
             top: 20px;
-            right: 47vw;
-            height: 60px;
-            width: 100px;
-            border-radius: 10%;
-            border: solid #0992C2 2px;
-            background: #0AC4E0;
-            color: #F6E7BC;
-            box-shadow: #0992C2 0px 5px 0px;
-            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+        
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            background: #64d8ea;
+            border: solid 4px #12a0e7;
+            box-shadow: 0 4px #12a0e7;
+            color: white;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #12a0e7;
+            box-shadow: 0 2px #12a0e7;
+            transform: translateY(2px);
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+        .score-board {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            font-size: 1.5rem;
+            color: white;
         }
 
 
@@ -97,22 +144,28 @@
 </head>
 <body>
 
-<div class="scene">
+    <div class="score-board">
+        Score: 0
+    </div>
+
     <h2>Hill Climbing Racing</h2>
-    <div class="hill"></div>
 
     <div class="car">
         <div class="wheel_left"></div>
         <div class="wheel_right"></div>
     </div>
-    <div class="hill_2">
-
+    <div class="hill-container">
+    <div class="hill"></div>
+    <div class="hill hill2"></div>
     </div>
-     <button >Play</button>
+
+    <div class="controls">
+        <button class="btn">Accelerate</button>
+        <button class="btn">Brake</button>
+    </div>
      
 
 
-</div>
 
 </body>
 </html>
