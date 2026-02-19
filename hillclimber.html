@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Hill Climbing</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: skyblue;
+        }
+
+        
+
+        .hill {
+            position: absolute;
+            bottom: 0;
+            width: 200%;
+            height: 60%;
+            background: #005F02;
+            border-radius: 50% 50% 0 0;
+            
+        }
+         .hill_2 {
+            position: absolute;
+            bottom: 0;
+            width: 200%;
+            height: 40%;
+            background: #427A43;
+            border-radius: 50% 50% 0 0;
+            animation: moveHill 6s linear infinite;
+            
+        }
+         @keyframes moveHill {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+
+
+        .car {
+            position: absolute;
+            bottom: 40%;
+            left: 10%;
+            width: 60px;
+            height: 30px;
+            background: red;
+            border-radius: 5px;
+            animation: bounce 2s ease-in-out infinite
+        }
+
+
+        .wheel_left { 
+            position: absolute;
+            bottom: -10px;
+            width: 15px;
+            height: 15px;
+            background: black;
+            border-radius: 50%;
+            left: 5px; }
+        .wheel_right { 
+            position: absolute;
+            bottom: -10px;
+            width: 15px;
+            height: 15px;
+            background: black;
+            border-radius: 50%;
+            right: 5px; }
+         @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h2 {
+            position: absolute;
+            top: 50px;
+            left: 100px  ;
+            color: white;
+            font-family: Arial;
+            font-size: 3rem;
+        }
+        button {
+            position: absolute;
+            top: 20px;
+            right: 47vw;
+            height: 60px;
+            width: 100px;
+            border-radius: 10%;
+            border: solid #0992C2 2px;
+            background: #0AC4E0;
+            color: #F6E7BC;
+            box-shadow: #0992C2 0px 5px 0px;
+            font-size: 2rem;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="scene">
+    <h2>Hill Climbing Racing</h2>
+    <div class="hill"></div>
+
+    <div class="car">
+        <div class="wheel_left"></div>
+        <div class="wheel_right"></div>
+    </div>
+    <div class="hill_2">
+
+    </div>
+     <button >Play</button>
+     
+
+
+</div>
+
+</body>
+</html>
