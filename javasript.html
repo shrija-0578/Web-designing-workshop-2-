@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hello javascript</h2>
+    <script>
+        // alert("javascript is running!");
+        // console.log("hello world");
+        // ____________________________________________
+        // variable declaration and initialization
+        var name = "John";
+        var s_id = 12345;
+        var branch = "Computer Science";
+        var mobile = 9876543210;
+
+        console.log("name: " + name);
+        console.log("student id: " + s_id);
+        console.log("branch: " + branch);
+        console.log("mobile: " + mobile);
+        // ----------------------------------------------
+        // conditional statements
+        var marks = 55;
+        if (marks >= 90) {
+            console.log("Grade: A");
+        } else if (marks >= 80) {
+            console.log("Grade: B");
+        } else if (marks >= 70) {
+            console.log("Grade: C");
+        } else if (marks >= 60) {
+            console.log("Grade: D");
+        } else {
+            console.log("fail");
+        }
+        // ----------------------------------------------
+        // loops
+        console.log("for loop:");
+        for(var i = 1; i <= 5; i++) {
+            console.log("*".repeat(i));
+        }
+        console.log("______________________");
+        for(var j = 1; j <= 5; j++) {
+            console.log(" ".repeat(5-j) + "*".repeat(j) + "*".repeat(j-1));
+        }
+        
+
+    </script>
+</body>
+</html>
