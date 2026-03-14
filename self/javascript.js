@@ -43,9 +43,30 @@ console.log(str2.slice(5));
 str2.concat("3>");
 console.log(str2.concat("3>"));
 //ques
-let nam;
-nam=prompt("enter your name");
-console.log("@" + nam + (nam.length));  
+            // let nam;
+            // nam=prompt("enter your name");
+            // console.log("@" + nam + (nam.length));  
 //array
 let arr=[1,2,3,4,5];
 console.log(arr);
+arr.push("hello",34);
+console.log(arr);
+let poppedElement = arr.pop();
+console.log("Popped element: " + poppedElement);
+console.log(arr);
+// console.log(arr.toString); 
+
+//function
+function greet(name)
+{
+    console.log("hello " + name);
+}   
+greet("tony");
+
+function sum(a,b){
+    return a+b;
+}
+console.log(sum(2,3));
+//arrow function
+const arrow_sum = (a,b) =>{ return a+b;};
+console.log(arrow_sum(5,6));
