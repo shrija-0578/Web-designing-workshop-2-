@@ -73,4 +73,13 @@ console.log(arrow_sum(5,6));
 //for each loop by arrow function
 arr=[1,2,3,4,5];
 arr.forEach((val)=>{console.log(val*val);});
+//map function
+let squaredArr = arr.map((val) => val * val);
+console.log(squaredArr);
+//filter function
+let evenArr = arr.filter((val) => val % 2 === 0);
+console.log(evenArr);
+// reduce function
+let sumOfArr = arr.reduce((acc, val) => acc + val, 0);
+console.log(sumOfArr);
 
