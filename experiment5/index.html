@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Employee Details </h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name"  placeholder="Enter employee name"><br><br>
+        <label for="empid">Employee ID:</label>
+        <input type="text" id="empid"  placeholder="Enter employee ID"><br><br>
+        <label for="empsal">Employee Salary:</label>
+        <input type="number" id="empsal"  placeholder="Enter employee salary"><br><br>
+        <label for="department">Department:</label>
+        <input type="text" id="department"  placeholder="Enter employee department"><br><br>
+
+        <button onclick="addEmployee()">Add Employee</button>
+        <button onclick="displayEmployees()">Display Employees</button>
+        <button onclick="totalSalary()">Total Salary</button>
+        <button onclick="averageSalary()">Average Salary</button>
+        <button onclick="countDepartment()">Count by Department</button>
+        <p id="output"></p>
+    </div>
+    
+</body>
+</html>
