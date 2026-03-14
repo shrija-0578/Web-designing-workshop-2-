@@ -70,3 +70,7 @@ console.log(sum(2,3));
 //arrow function
 const arrow_sum = (a,b) =>{ return a+b;};
 console.log(arrow_sum(5,6));
+//for each loop by arrow function
+arr=[1,2,3,4,5];
+arr.forEach((val)=>{console.log(val*val);});
+
