@@ -82,4 +82,4 @@ console.log(evenArr);
 // reduce function
 let sumOfArr = arr.reduce((acc, val) => acc + val, 0);
 console.log(sumOfArr);
-
+ 

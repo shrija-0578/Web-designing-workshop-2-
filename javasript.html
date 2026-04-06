@@ -74,7 +74,29 @@
         // let numbers=[10,30,20];
         // let sum= numbers.reduce((total, num) => total + num, 0);
         // console.log(sum);
-        
+        //____________________________________________
+        // JSON
+        let student = {
+            name: "Alice",       
+            age: 22
+        };
+        console.log(student);    
+        let studentJSON = JSON.stringify(student);
+        console.log(studentJSON);  
+        //stringify converts the JavaScript object into a JSON string
+        let parsedStudent = JSON.parse(studentJSON);
+        console.log(parsedStudent.name); 
+        //parse converts the JSON string back into a JavaScript object
+        console.log(parsedStudent.age);
+        // ----------------------------------------------
+        let students = [
+            { name: "Alice", age: 22 },
+            { name: "Bob", age: 24 },
+            { name: "Charlie", age: 21 }
+        ];
+        console.log(students);
+
+
     </script>
 </body>
 </html>
