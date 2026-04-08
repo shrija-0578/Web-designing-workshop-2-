@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juice Corner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- TOP HUD -->
+  <header id="hud-top">
+    <div id="hud-left">
+      <span class="hud-label">HIGH SCORE</span>
+      <span id="high-score-val">0</span>
+    </div>
+    <div id="game-title">🍹 Juice Corner</div>
+    <div id="hud-right">
+      <span class="hud-label">LIVES</span>
+      <div id="lives-display"></div>
+    </div>
+  </header>
+
+  <!-- GAME CANVAS AREA -->
+  <main id="game-area">
+    <canvas id="game-canvas"></canvas>
+
+    <!-- PAUSE / START OVERLAY -->
+    <div id="start-overlay" class="overlay active">
+      <div class="overlay-box">
+        <div class="overlay-emoji">🍹</div>
+        <h1>Juice Corner</h1>
+        <p>Catch falling fruits in your basket!<br/>Collect <strong>5 of the same fruit</strong> to fill a glass.</p>
+        <p class="sub-note">Move basket: <kbd>← →</kbd> Arrow Keys or Mouse</p>
+        <button id="start-btn">Start Game</button>
+      </div>
+    </div>
+
+    <!-- GAME OVER OVERLAY -->
+    <div id="gameover-overlay" class="overlay">
+      <div class="overlay-box gameover-box">
+        <div class="overlay-emoji">😢</div>
+        <h1>Game Over!</h1>
+        <div id="go-stats"></div>
+        <div id="go-total"></div>
+        <button id="restart-btn">Play Again</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- BOTTOM HUD: JUICE TRACKER -->
+  <footer id="hud-bottom">
+    <div class="tracker-title">🧃 Juice Tracker</div>
+    <div id="tracker-grid"></div>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
