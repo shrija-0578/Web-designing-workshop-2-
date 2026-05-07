@@ -9,21 +9,18 @@ function addEmployee() {
         alert("Please fill in all fields.");
         return;
     }
-
     let employee = {
         name: name,
         empid: empid,
         empsal: empsal,
         department: department 
     };
-
     employees.push(employee);
     alert("emplyee added successfully!");
     document.getElementById("name").value = "";
     document.getElementById("empid").value = "";
     document.getElementById("empsal").value = "";
     document.getElementById("department").value = "";
-
 }
 function displayEmployees() {
     let output = "<h3>All Employees</h3>";

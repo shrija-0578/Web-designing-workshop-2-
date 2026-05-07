@@ -5,7 +5,6 @@ body{
     text-align: center;
 }
 #content{
-
     position : absolute;
     top: 5%;
     left : 30vw; 
@@ -14,17 +13,13 @@ body{
     background-color: #f8f5f1;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1) ;
-    
-
+    box-shadow: 4px 4px 10px
+     rgba(0, 0, 0, 0.1) ; 
 }
 #content h1{
     text-align: center;
     color: #4cc9ff;
     font-size: 3em;
-    /* selector {
-        text-shadow: [horizontal-offset] [vertical-offset] [blur-radius] [color];
-    } */
     text-shadow: 1px 1px  #0c132d;
 }
 #inputfield{

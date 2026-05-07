@@ -23,7 +23,9 @@ function calculateResult() {
         result="Pass";
     else
         result="Fail";
-
-    document.getElementById("result").innerHTML = "total marks: " + total + "<br> average marks: " + average + "<br> grade: " + grade + "<br> result: " + result;
+    document.getElementById("result").innerHTML 
+    = "total marks: " + total + "<br> average marks:
+     " + average + "<br> grade: " + grade + "<br> result:
+      " + result;
 
 }
