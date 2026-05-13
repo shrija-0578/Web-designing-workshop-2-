@@ -9,9 +9,27 @@ function App() {
 
   return (
     <>
-      <Student name="Rahul Sharma" sub="computer science" marks={85} />
-      <Student name="Anita Verma" sub="Information Technology" marks={92} />
-      <Student name="Rohan Gupta" sub="Electronics" marks={78} />
+    <div className="main-container">
+      <h1>Student Information</h1>
+
+      <div className="card">
+        <h2>Rahul Sharma</h2>
+        <p>Course: Computer Science</p>
+        <p>Marks: 85</p>
+      </div>
+
+      <div className="card">
+        <h2>Anita Verma</h2>
+        <p>Course: Information Technology</p>
+        <p>Marks: 92</p>
+      </div>
+
+      <div className="card">
+        <h2>Rohan Gupta</h2>
+        <p>Course: Electronics</p>
+        <p>Marks: 78</p>
+      </div>
+    </div>
     </>
   )
 }
