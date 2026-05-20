@@ -11,7 +11,7 @@ function App() {
 
   const [message, setMessage] = useState("");
 
-
+// shrija Lal
   const handleSubmit = (e) => {
 
     e.preventDefault();
@@ -59,20 +59,15 @@ function App() {
             value={email}
             onChange={(e)=>setEmail(e.target.value)}
           />
-
           <input
             type="password"
             placeholder="Enter Password"
             value={password}
             onChange={(e)=>setPassword(e.target.value)}
-          />
-
-          <button type="submit">
+          />          <button type="submit">
             Register
           </button>
-
         </form>
-
         <p className="success-message">
           {message}
         </p>
@@ -90,13 +85,9 @@ function App() {
               ))
             }
           </ul>
-
         </div>
-
       </div>
-
     </div>
   );
 }
-
 export default App
