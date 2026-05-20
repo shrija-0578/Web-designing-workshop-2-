@@ -13,3 +13,5 @@ correct terminal
 npm run dev
 <!-- end -->
 ctrl+c
+<!-- bootstrap -->
+npm i bootstrap@5.3.8 

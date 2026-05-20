@@ -1,0 +1,29 @@
+.container_todo{
+    width: 100%;
+}
+h1{color: blue;
+    text-align: center;
+    font-weight: bold ;
+    margin: 10px;
+}
+input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+.myrow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 2px;
+}
+.mybtn{
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+}
+.myadd{
+    width: 100%;
+    background-color: rgb(231, 251, 252);
+}
