@@ -1,21 +1,19 @@
 import React, { useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
-
+import Itemlist from "./components/Itemslist"  ;
+import Errormes from "./components/Errormes"  ;
 function App() {
   const [count, setCount] = useState(0)
-  let items=["An item", "A second item", "A third item","fourth", "A fourth item", "And a fifth one"];
+  
   // let items=[];
+  let items=[];
+
   return (
     <>
       <h1>Fragments</h1>  
-      {(items.length==0 ? <h3> empty list </h3>: null) }
-      <ul class="list-group">
-        {items.map((item) => (
-          <li class="list-group-item"  key={item}> {item} </li>
-        ))} 
-        
-      </ul> 
+      <Errormes items={items}></Errormes> 
+      <Itemlist items={items}></Itemlist>
     </>
   )
 }
