@@ -1,10 +1,11 @@
+
 ...\web designing workshop2\experiment9>
 npm create vite@latest . 
 <!-- you are already inside experiment9
 dot means "create project in current folder -->
 y
 react
-react
+
 javascript 
 y
 ctrl+click--->link
